@@ -8,8 +8,8 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between m-auto w-full divide-y divide-white divide-opacity-10">
             <MainSection className="max-w-screen-md w-full bg-white text-black rounded-2xl portrait:rounded-none overflow-hidden  m-6 portrait:m-0">
-                <div className="w-full h-full flex portrait:flex-col flex-wrap items-center justify-center  portrait:min-h-svh portrait:h-full overflow-hidden">
-                    <div className="flex flex-col justify-center items-start gap-4 flex-1 p-6 bg-[#afe46c] rounded-r-2xl portrait:rounded-none">
+                <div className="w-full h-full flex portrait:flex-col-reverse flex-wrap items-center justify-center  portrait:min-h-svh portrait:h-full overflow-hidden">
+                    <div className="flex flex-col justify-center items-start gap-4 flex-1 p-6 bg-[#afe46c] portrait:bg-transparent rounded-r-2xl portrait:rounded-none">
                         <div className="flex flex-col gap-2 items-center ">
                             <h1 className="uppercase text-5xl font-bold tracking-widest text-start font-head w-full">
                                 Nadiem
@@ -42,7 +42,7 @@ export default function Home() {
             </MainSection>
             <Section>
                 <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="h-80 w-auto m-auto">
+                    <div className="portrait:hidden h-80 w-auto m-auto">
                         <Image
                             src="/avatar.jpg"
                             alt="Nadiem Anwar Makarim"
