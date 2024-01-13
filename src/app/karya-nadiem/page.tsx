@@ -8,9 +8,9 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between m-auto w-full divide-y divide-white divide-opacity-10">
             <Section>
-                <div className="flex-row flex gap-4 items-center">
+                <div className="flex-row flex gap-2 items-center">
                     <BackButton />
-                    <h2 className="text-4xl font-bold text-center">
+                    <h2 className="text-4xl font-bold text-start">
                         Karya Nadiem Untuk Indonesia
                     </h2>
                 </div>
