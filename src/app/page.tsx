@@ -1,7 +1,8 @@
 import MainSection from "@/components/MainSection";
 import Section from "@/components/Section";
-import { CaretDown, Quotes } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, CaretDown, Quotes } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -18,12 +19,14 @@ export default function Home() {
                             <h1 className="uppercase text-xl font-bold tracking-widest text-start w-full">
                                 MENTERI PENDIDIKAN DAN KEBUDAYAAN
                             </h1>
-                            
                         </div>
                         <h1 className="text-xl text-start tracking-wider bg-black text-white uppercase font-bold px-4 py-2 rounded-full">
                             Biografi
                         </h1>
-                        <CaretDown size={24} className="self-center hidden portrait:visible"/>
+                        <CaretDown
+                            size={24}
+                            className="self-center hidden portrait:block"
+                        />
                     </div>
                     <div className="portrait:flex-none flex-1 w-auto flex m-4">
                         <Image
@@ -57,9 +60,9 @@ export default function Home() {
                             1984 dari pasangan Nono Anwar Makarim dan Atika
                             Algadrie. Ia adalah anak lelaki satu satunya dari
                             pengacara ternama keturunan Arab asal Pekalongan,
-                            Jawa Tengah, Nono Anwar Makarim. Ayahnya seorang
-                            intelektual dan lawyer dengan gelar Doktor ilmu
-                            hukum lulusan Harvard.
+                            Jawa Tengah, Nono Anwar Makarim. Ayahnya adalah
+                            seorang pengacara dengan gelar Doktor ilmu hukum
+                            lulusan Harvard.
                         </p>
                     </div>
                 </div>
@@ -91,172 +94,12 @@ export default function Home() {
                     </div>
                 </div>
             </Section>
+            
             <Section>
-                <div className="flex md:flex-col flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center w-full">
-                        <div className="m-auto flex flex-row gap-4">
-                            <Image
-                                src="/lse.png"
-                                alt="London School of Economics"
-                                width={400}
-                                height={533}
-                                className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
-                                unoptimized
-                            />
-                            <Image
-                                src="/hbs.png"
-                                alt="Harvard Business School"
-                                width={400}
-                                height={533}
-                                className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
-                                unoptimized
-                            />
-                    </div>
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <h2 className="text-3xl font-bold">
-                            Riwayat Pendidikan
-                        </h2>
-                        <p className="text-xl">
-                            Ia berhasil mendapat gelar BA di jurusan
-                            International Relations. Ia pun sempat mengikuti
-                            pertukaran pelajar di London School of Economics.
-                            Tidak puas dengan ilmu yang dimiliki, ia melanjutkan
-                            pendidikan layaknya sang ayah dan mengambil
-                            masternya di Harvard Business School dan mendapatkan
-                            gelar MBA (Master of Business Administration).
-                        </p>
-                    </div>
+                <div className="flex flex-row justify-end text-xl tracking-wider leading-normal gap-8 items-center w-full">
+                    <Link href='/pendidikan-dan-pekerjaan' className="rounded-full bg-[#00aa13] px-6 py-3 hover:ring-2 hover:ring-white text-center flex flex-row items-center gap-2 w-full md:w-auto">Lanjut ke Pendidikan dan Pekerjaan <ArrowRight weight="bold"/></Link>
+                    
                 </div>
-            </Section>
-            <Section>
-                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <h2 className="text-3xl font-bold">
-                            Riwayat Pekerjaan
-                        </h2>
-                        <p className="text-xl">
-                            Pria lulusan Harvard ini memilih untuk kembali ke
-                            tanah airnya Indonesia, Nadiem tidak membutuhkan
-                            waktu yang lama untuk terjun ke dunia kerja.
-                            Berbekal ijazah yang dimilikinya, Nadiem direkrut di
-                            Management Consutant di McKinsey & Company, sebuah
-                            lembaga konsultan ternama yang berbasis di Jakarta.
-                            Di perusahaan ini, ia menghabiskan waktu 3 tahun.
-                        </p>
-                    </div>
-                    <div className="md:w-auto  w-full md:h-80 m-auto md:aspect-square">
-                        <Image
-                            src="/mckinsey.png"
-                            alt="McKinsey & Company"
-                            width={400}
-                            height={533}
-                            className="bg-white object-contain p-6 rounded-2xl md:h-80 w-full"
-                            unoptimized
-                        />
-                    </div>
-                </div>
-            </Section>
-            <Section>
-                <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
-                        <Image
-                            src="/zalora.png"
-                            alt="Zalora Indonesia"
-                            width={400}
-                            height={533}
-                            className="bg-white object-contain rounded-2xl md:h-80 w-full p-6"
-                            unoptimized
-                        />
-                    </div>
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <h2 className="text-3xl font-bold">Zalora Indonesia</h2>
-                        <p className="text-xl">
-                            Selain itu, ia juga bekerja sebagai Co-founder dan
-                            Managing Editor di Zalora Indonesia kemudian menjadi
-                            Chief Innovation officer kartuku.
-                        </p>
-                    </div>
-                </div>
-            </Section>
-            <Section>
-                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center font-semibold ">
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <p className="text-xl">
-                            Dari latar belakang seorang ayah dan ibu yang bukan
-                            berasal dari kalangan pengusaha, Nadiem banting
-                            setir memilih jalur yang berbeda dari latar belakang
-                            keluarganya itu, naluri bisnis Nadiem memang sangat
-                            tajam.
-                            <br />
-                            <br />
-                            Ia dapat melihat sebuah peluang bisnis yang cocok
-                            dan dapat membantu banyak warga Indonesia.
-                        </p>
-                    </div>
-                    <div className="md:w-auto w-full h-80 m-auto aspect-square">
-                        <Image
-                            src="/nadiem_gojek.jpg"
-                            alt="Nadiem Gojek"
-                            width={400}
-                            height={533}
-                            className="bg-zinc-900 object-cover rounded-2xl h-80 w-full"
-                            unoptimized
-                        />
-                    </div>
-                </div>
-            </Section>
-            <Section className="max-w-screen-md">
-                <div className="flex md:flex-col flex-col text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="w-full h-60 m-auto aspect-square flex justify-center items-center bg-white rounded-2xl">
-                        <Image
-                            src="/gojek_logo.svg"
-                            alt="Keluarga Nadiem"
-                            width={400}
-                            height={533}
-                            className="object-contain rounded-2xl  h-40 w-full p-8"
-                            unoptimized
-                        />
-                    </div>
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <h2 className="text-3xl font-bold">
-                            Awal Mula Ojek Online
-                        </h2>
-                        <p className="text-xl">
-                            Bermula dari pengalaman pribadinya kembali ke
-                            Jakarta untuk bekerja yang mempertemukan dirinya
-                            dengan kemacetan dan dengan jiwa enterpreneurshipnya
-                            itulah, pada 2011, ia mulai merintis perusahaan
-                            milik sendiri yang kemudian dikenal dengan nama
-                            GO-JEK, pesan ojek secara online.
-                        </p>
-                    </div>
-                </div>
-                <p className="text-xl tracking-wider ">
-                    Nadiem mengaku ia angkat kaki dari perusahaan sebelumnya
-                    hanya karena ia tidak betah bekerja di perusahaan orang
-                    lain. Ia ingin mengontrol dirinya sendiri. Nadiem dengan
-                    cerdas memanfaatkan perkembangan teknologi yang ada untuk
-                    kemudahan para pelanggan GO-JEK-nya. Aplikasi GO-JEK pun
-                    sudah bisa dirasakan manfaatnya oleh banyak orang.
-                </p>
-                <p className="text-xl tracking-wider">
-                    Dalam perkembangannya, seperti dilihat dalam akun Go-Jek,
-                    GO-JEK tak hanya sebagai tarnsportasi online penumpang, tapi
-                    ia berkembang menjadi jasa antar barang (Go-Send), makanan
-                    (Go-Food), alat kesehatan, massage, dan kebersihan
-                    (Go-Clean). Kini Go-JEK sudah memiliki 200 ribu partner
-                    pengemudi motor dan mobil, 35 ribu merchant Go Food, dan
-                    3.000 penyedia layanan lainnya.
-                </p>
-            </Section>
-            <Section className="max-w-screen-md p-8 relative flex-col bg-[#afe46c] text-black rounded-t-3xl">
-                <p className="text-center text-2xl tracking-wider leading-snug">
-                    Semua orang bisa mencuri idemu, tetapi tidak semua orang
-                    bisa <b>mengeksekusi idemu sebaik dirimu</b>.
-                </p>
-
-                <p className="text-center text-2xl tracking-wider leading-snug font-mono">
-                    - Nadiem Makarim -
-                </p>
             </Section>
         </main>
     );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Gabarito, Kalam } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 const kalam = Kalam({
@@ -21,7 +22,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${gabarito.className} ${kalam.variable}`}>{children}</body>
+            <body
+                className={`${gabarito.className} ${kalam.variable}`}
+            >
+                {children}
+                <Footer />
+            </body>
+            
         </html>
     );
 }
