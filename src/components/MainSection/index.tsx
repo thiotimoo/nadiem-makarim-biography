@@ -5,12 +5,12 @@ interface IContainer {
     className?: string;
 }
 
-const Section: React.FC<IContainer> = ({ children, className }) => {
+const MainSection: React.FC<IContainer> = ({ children, className }) => {
     return (
-        <section className={`flex flex-col gap-6 p-6 ${className}`}>
+        <section className={`flex flex-col gap-6 ${className}`}>
             {children}
         </section>
     );
 };
 
-export default Section;
+export default MainSection;

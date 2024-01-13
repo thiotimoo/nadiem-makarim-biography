@@ -1,39 +1,42 @@
+import MainSection from "@/components/MainSection";
 import Section from "@/components/Section";
-import { Quotes } from "@phosphor-icons/react/dist/ssr";
+import { CaretDown, Quotes } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between gap-8 p-6 m-auto">
-            <Section className="max-w-screen-md w-full bg-pattern rounded-2xl">
-                <div className="w-full h-full flex portrait:flex-col flex-wrap items-center justify-center  portrait:min-h-screen portrait:h-full">
-                    <div className="flex flex-col justify-start items-start gap-4 flex-1 p-6">
-                        <div className="flex flex-col gap-2">
-                            <h1 className="uppercase text-7xl font-bold tracking-widest text-start font-head">
+        <main className="flex min-h-screen flex-col items-center justify-between m-auto w-full divide-y divide-white divide-opacity-10">
+            <MainSection className="max-w-screen-md w-full bg-white text-black rounded-2xl portrait:rounded-none overflow-hidden  m-6 portrait:m-0">
+                <div className="w-full h-full flex portrait:flex-col flex-wrap items-center justify-center  portrait:min-h-svh portrait:h-full overflow-hidden">
+                    <div className="flex flex-col justify-center items-start gap-4 flex-1 p-6 bg-[#afe46c] rounded-r-2xl portrait:rounded-none">
+                        <div className="flex flex-col gap-2 items-center ">
+                            <h1 className="uppercase text-5xl font-bold tracking-widest text-start font-head w-full">
                                 Nadiem
                                 <br />
                                 Makarim
                             </h1>
-                            <h1 className="uppercase text-xl font-bold tracking-widest text-start ">
+                            <h1 className="uppercase text-xl font-bold tracking-widest text-start w-full">
                                 MENTERI PENDIDIKAN DAN KEBUDAYAAN
                             </h1>
+                            
                         </div>
-                        <h1 className="text-xl text-start tracking-wider bg-[#afe46c] text-black uppercase font-bold px-4 py-2 rounded-full">
+                        <h1 className="text-xl text-start tracking-wider bg-black text-white uppercase font-bold px-4 py-2 rounded-full">
                             Biografi
                         </h1>
+                        <CaretDown size={24} className="self-center hidden portrait:visible"/>
                     </div>
-                    <div className="h-full flex-1 w-auto flex items-end">
+                    <div className="portrait:flex-none flex-1 w-auto flex m-4">
                         <Image
                             src="/thumbnail.png"
                             alt="Nadiem Anwar Makarim"
                             width={500}
                             height={500}
-                            className="object-contain rounded-2xl h-full w-auto"
+                            className="object-contain rounded-2xl h-full w-auto bg-[#31cee7]"
                             unoptimized
                         />
                     </div>
                 </div>
-            </Section>
+            </MainSection>
             <Section>
                 <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
                     <div className="h-80 w-auto m-auto">
@@ -76,41 +79,37 @@ export default function Home() {
                             di Brown University Amerika Serikat.
                         </p>
                     </div>
-                    <div className="md:w-auto  w-full  h-80 m-auto aspect-square">
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
                         <Image
                             src="/family_photo.jpg"
                             alt="Keluarga Nadiem"
                             width={400}
                             height={533}
-                            className="bg-zinc-900 object-cover rounded-2xl h-80 w-full"
+                            className="bg-zinc-900 object-cover rounded-2xl md:h-80 w-full"
                             unoptimized
                         />
                     </div>
                 </div>
             </Section>
             <Section>
-                <div className="flex md:flex-col flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="flex-row flex gap-4">
-                        <div className="w-full h-64 m-auto flex-1">
+                <div className="flex md:flex-col flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center w-full">
+                        <div className="m-auto flex flex-row gap-4">
                             <Image
                                 src="/lse.png"
                                 alt="London School of Economics"
                                 width={400}
                                 height={533}
-                                className="bg-white object-contain rounded-2xl h-full w-full p-6"
+                                className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
                                 unoptimized
                             />
-                        </div>
-                        <div className="w-full h-64 m-auto flex-1">
                             <Image
                                 src="/hbs.png"
                                 alt="Harvard Business School"
                                 width={400}
                                 height={533}
-                                className="bg-white object-contain rounded-2xl h-full w-full p-6"
+                                className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
                                 unoptimized
                             />
-                        </div>
                     </div>
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">
@@ -144,13 +143,13 @@ export default function Home() {
                             Di perusahaan ini, ia menghabiskan waktu 3 tahun.
                         </p>
                     </div>
-                    <div className="md:w-auto  w-full  h-80 m-auto aspect-square">
+                    <div className="md:w-auto  w-full md:h-80 m-auto md:aspect-square">
                         <Image
                             src="/mckinsey.png"
                             alt="McKinsey & Company"
                             width={400}
                             height={533}
-                            className="bg-white object-contain p-6 rounded-2xl h-80 w-full"
+                            className="bg-white object-contain p-6 rounded-2xl md:h-80 w-full"
                             unoptimized
                         />
                     </div>
@@ -158,13 +157,13 @@ export default function Home() {
             </Section>
             <Section>
                 <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="md:w-auto w-full h-80 m-auto aspect-square">
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
                         <Image
-                            src="/zalora.jpg"
+                            src="/zalora.png"
                             alt="Zalora Indonesia"
                             width={400}
                             height={533}
-                            className="bg-black object-contain rounded-2xl h-80 w-full"
+                            className="bg-white object-contain rounded-2xl md:h-80 w-full p-6"
                             unoptimized
                         />
                     </div>
@@ -193,7 +192,7 @@ export default function Home() {
                             dan dapat membantu banyak warga Indonesia.
                         </p>
                     </div>
-                    <div className="md:w-auto  w-full h-80 m-auto aspect-square">
+                    <div className="md:w-auto w-full h-80 m-auto aspect-square">
                         <Image
                             src="/nadiem_gojek.jpg"
                             alt="Nadiem Gojek"
@@ -207,13 +206,13 @@ export default function Home() {
             </Section>
             <Section className="max-w-screen-md">
                 <div className="flex md:flex-col flex-col text-xl tracking-wider leading-normal gap-8 items-center">
-                    <div className="w-full h-80 m-auto aspect-square flex justify-center items-center bg-white rounded-2xl">
+                    <div className="w-full h-60 m-auto aspect-square flex justify-center items-center bg-white rounded-2xl">
                         <Image
                             src="/gojek_logo.svg"
                             alt="Keluarga Nadiem"
                             width={400}
                             height={533}
-                            className="object-contain rounded-2xl h-20 w-full"
+                            className="object-contain rounded-2xl  h-40 w-full p-8"
                             unoptimized
                         />
                     </div>
@@ -249,13 +248,8 @@ export default function Home() {
                     3.000 penyedia layanan lainnya.
                 </p>
             </Section>
-            <Section className="max-w-screen-md p-8 relative flex-col bg-blue-400 text-black rounded-2xl">
-                <Quotes
-                    className="absolute right-8 bottom-8"
-                    size={48}
-                    weight="fill"
-                />
-                <p className="text-center text-4xl tracking-wider leading-snug">
+            <Section className="max-w-screen-md p-8 relative flex-col bg-[#afe46c] text-black rounded-t-3xl">
+                <p className="text-center text-2xl tracking-wider leading-snug">
                     Semua orang bisa mencuri idemu, tetapi tidak semua orang
                     bisa <b>mengeksekusi idemu sebaik dirimu</b>.
                 </p>
