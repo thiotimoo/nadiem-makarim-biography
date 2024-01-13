@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="max-w-screen-md m-auto bg-[#afe46c] p-6 text-black">
+        <footer className="max-w-screen-md m-auto bg-white p-6 text-black">
             <p>
                 Website ini dibuat oleh:
                 <br />

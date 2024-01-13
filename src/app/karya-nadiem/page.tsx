@@ -87,7 +87,7 @@ export default function Home() {
                     3.000 penyedia layanan lainnya.
                 </p>
             </Section>
-            <Section className="max-w-screen-md p-8 relative flex-col bg-[#ffffff] text-black rounded-t-3xl">
+            <Section className="max-w-screen-md p-8 pb-0 relative flex-col bg-[#ffffff] text-black rounded-t-3xl">
                 <p className="text-center text-2xl tracking-wider leading-snug">
                     Semua orang bisa mencuri idemu, tetapi tidak semua orang
                     bisa <b>mengeksekusi idemu sebaik dirimu</b>.
@@ -96,6 +96,7 @@ export default function Home() {
                 <p className="text-center text-2xl tracking-wider leading-snug font-mono">
                     - Nadiem Makarim -
                 </p>
+                <hr className="h-[2px] my-2 bg-gray-200 border-0 "/>
             </Section>
         </main>
     );
