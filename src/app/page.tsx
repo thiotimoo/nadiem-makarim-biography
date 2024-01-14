@@ -55,14 +55,19 @@ export default function Home() {
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">Identitas Tokoh</h2>
                         <p className="text-xl">
-                            <b>Nadiem Anwar Makarim</b> atau yang lebih dikenal
-                            dengan panggilan Pak Nadiem lahir di Jakarta 4 Juli
-                            1984 dari pasangan Nono Anwar Makarim dan Atika
-                            Algadrie. Ia adalah anak lelaki satu satunya dari
-                            pengacara ternama keturunan Arab asal Pekalongan,
-                            Jawa Tengah, Nono Anwar Makarim. Ayahnya adalah
-                            seorang pengacara dengan gelar Doktor ilmu hukum
-                            lulusan Harvard.
+                            Nadiem Anwar Makarim, B.A., M.B.A. adalah seorang
+                            pengusaha berkebangsaan Indonesia yang memegang
+                            jabatan Menteri Pendidikan, Kebudayaan, Riset, dan
+                            Teknologi. Dari pasangan Nono Anwar Makarim dan
+                            Atika Algadrie, Pak Nadiem lahir pada 4 Juli 1984 di
+                            Singapura.
+                        </p>
+                        <p className="text-xl">
+                            Ia adalah anak lelaki dari Nono Anwar Makarim,
+                            pengacara terkenal dari Pekalongan, Jawa Tengah.
+                            Ayahnya adalah seorang pengacara yang memiliki gelar
+                            doktor ilmu hukum dan lulus dari Universitas
+                            Harvard.
                         </p>
                     </div>
                 </div>
@@ -72,14 +77,10 @@ export default function Home() {
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">Keluarga Nadiem</h2>
                         <p className="text-xl">
-                            Meski Nadiem adalah anak bungsu dari 3 bersaudara,
-                            ia tidak berperilaku manja. Justru ia tetap
-                            menunjukkan kemandiriannya. Setelah meluluskan
-                            jenjang pendidikan dasar dan menengahnya di Jakarta,
-                            ia melanjutkan SMA- nya di Singapura. Bahkan tak
-                            hanya di situ kemandiriannya, lulus dari Singapura,
-                            ia pergi ke Amerika untuk melanjutkan pendidikannya
-                            di Brown University Amerika Serikat.
+                            Nadiem merupakan anak bungsu dari tiga bersaudara. Dia
+                            sudah menikah dengan Franka Franklin, dan mereka
+                            memiliki anak yang cantik bernama Solara Franklin
+                            Makarim.
                         </p>
                     </div>
                     <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
@@ -94,11 +95,16 @@ export default function Home() {
                     </div>
                 </div>
             </Section>
-            
+
             <Section>
                 <div className="flex flex-row justify-end text-xl tracking-wider leading-normal gap-8 items-center w-full">
-                    <Link href='/pendidikan-dan-pekerjaan' className="rounded-full bg-[#00aa13] px-6 py-3 hover:ring-2 hover:ring-white text-center flex flex-row items-center gap-2 w-full md:w-auto">Lanjut ke Pendidikan dan Pekerjaan <ArrowRight weight="bold"/></Link>
-                    
+                    <Link
+                        href="/pendidikan"
+                        className="rounded-full bg-[#00aa13] px-6 py-3 hover:ring-2 hover:ring-white text-center flex flex-row items-center gap-2 w-full md:w-auto"
+                    >
+                        Lanjut ke Riwayat Pendidikan{" "}
+                        <ArrowRight weight="bold" />
+                    </Link>
                 </div>
             </Section>
         </main>

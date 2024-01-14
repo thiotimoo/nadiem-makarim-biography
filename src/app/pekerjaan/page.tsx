@@ -16,64 +16,26 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between m-auto w-full divide-y divide-white divide-opacity-10">
             <Section>
-                
                 <div className="flex-row flex gap-2 items-center">
-                <BackButton/>
+                    <BackButton />
                     <h2 className="text-4xl font-bold text-start">
-                        Pendidikan dan Pekerjaan
+                        Riwayat Pekerjaan
                     </h2>
                 </div>
             </Section>
-            <Section>
-                <div className="flex md:flex-col flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center w-full">
-                    <div className="m-auto flex flex-row gap-4">
-                        <Image
-                            src="/lse.png"
-                            alt="London School of Economics"
-                            width={400}
-                            height={533}
-                            className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
-                            unoptimized
-                        />
-                        <Image
-                            src="/hbs.png"
-                            alt="Harvard Business School"
-                            width={400}
-                            height={533}
-                            className="bg-white object-contain rounded-2xl flex-1 w-1/2 p-4"
-                            unoptimized
-                        />
-                    </div>
-                    <div className="flex-1 w-full gap-4 flex flex-col">
-                        <h2 className="text-3xl font-bold">
-                            Riwayat Pendidikan
-                        </h2>
-                        <p className="text-xl">
-                            Ia berhasil mendapat gelar BA di jurusan
-                            International Relations. Ia pun sempat mengikuti
-                            pertukaran pelajar di London School of Economics.
-                            Tidak puas dengan ilmu yang dimiliki, ia melanjutkan
-                            pendidikan layaknya sang ayah dan mengambil
-                            masternya di Harvard Business School dan mendapatkan
-                            gelar MBA (Master of Business Administration).
-                        </p>
-                    </div>
-                </div>
-            </Section>
+            
             <Section>
                 <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">
-                            Riwayat Pekerjaan
+                            Karir Setelah Lulus Kuliah
                         </h2>
                         <p className="text-xl">
-                            Pria lulusan Harvard ini memilih untuk kembali ke
-                            tanah airnya Indonesia, Nadiem tidak membutuhkan
-                            waktu yang lama untuk terjun ke dunia kerja.
-                            Berbekal ijazah yang dimilikinya, Nadiem direkrut di
-                            Management Consutant di McKinsey & Company, sebuah
-                            lembaga konsultan ternama yang berbasis di Jakarta.
-                            Di perusahaan ini, ia menghabiskan waktu 3 tahun.
+                            Nadiem, seorang lulusan Harvard, cepat terjun ke
+                            dunia kerja setelah mendapatkan ijazah dan
+                            dipekerjakan sebagai konsultan manajemen di McKinsey
+                            & Company, sebuah lembaga konsultan terkenal. Dia
+                            bekerja di perusahaan ini selama tiga tahun.
                         </p>
                     </div>
                     <div className="md:w-auto  w-full md:h-80 m-auto md:aspect-square">
@@ -93,7 +55,7 @@ export default function Home() {
                     <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
                         <Image
                             src="/zalora.png"
-                            alt="Zalora Indonesia"
+                            alt="Karir Setelah Kembali ke Tanah Air"
                             width={400}
                             height={533}
                             className="bg-white object-contain rounded-2xl md:h-80 w-full p-6"
@@ -103,10 +65,39 @@ export default function Home() {
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">Zalora Indonesia</h2>
                         <p className="text-xl">
-                            Selain itu, ia juga bekerja sebagai Co-founder dan
-                            Managing Editor di Zalora Indonesia kemudian menjadi
-                            Chief Innovation officer kartuku.
+                            Setelah mendapatkan gelar master dari Harvard
+                            University, Nadiem kembali ke Indonesia untuk
+                            bekerja sebagai editor manajer dan Co-Founder Zalora
+                            Indonesia.
                         </p>
+
+                        
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <h2 className="text-3xl font-bold">
+                            KartuKu
+                        </h2>
+                        <p className="text-xl">
+                            Setelah itu, ia bekerja sebagai Chief
+                            Information Officer yang bertanggung jawab dalam
+                            manajemen, dan penggunaan teknologi informasi atau
+                            IT di Kartuku, sebuah perusahaan baru yang
+                            menawarkan layanan pembayaran non-tunai.
+                        </p>
+                    </div>
+                    <div className="md:w-auto  w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/kartuku.png"
+                            alt="KartuKu"
+                            width={400}
+                            height={533}
+                            className="bg-white object-contain p-16 rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
                     </div>
                 </div>
             </Section>

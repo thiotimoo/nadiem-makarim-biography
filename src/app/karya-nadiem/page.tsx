@@ -1,8 +1,9 @@
 import BackButton from "@/components/BackButton";
 import MainSection from "@/components/MainSection";
 import Section from "@/components/Section";
-import { CaretDown, Quotes } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, CaretDown, Quotes } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -60,43 +61,151 @@ export default function Home() {
                             Awal Mula Ojek Online
                         </h2>
                         <p className="text-xl">
-                            Bermula dari pengalaman pribadinya kembali ke
-                            Jakarta untuk bekerja yang mempertemukan dirinya
-                            dengan kemacetan dan dengan jiwa enterpreneurshipnya
-                            itulah, pada 2011, ia mulai merintis perusahaan
-                            milik sendiri yang kemudian dikenal dengan nama
-                            GO-JEK, pesan ojek secara online.
+                            Bosan bekerja di perusahaan orang, Nadiem pun
+                            mencoba peruntungan dengan mendirikan badan usaha
+                            sendiri. Ia pun akhirnya mendirikan startup yang
+                            berbasis penyedia jasa transportasi pada tahun 2010
+                            bernama Gojek.
                         </p>
                     </div>
                 </div>
-                <p className="text-xl tracking-wider ">
-                    Nadiem mengaku ia angkat kaki dari perusahaan sebelumnya
-                    hanya karena ia tidak betah bekerja di perusahaan orang
-                    lain. Ia ingin mengontrol dirinya sendiri. Nadiem dengan
-                    cerdas memanfaatkan perkembangan teknologi yang ada untuk
-                    kemudahan para pelanggan GO-JEK-nya. Aplikasi GO-JEK pun
-                    sudah bisa dirasakan manfaatnya oleh banyak orang.
-                </p>
-                <p className="text-xl tracking-wider">
-                    Dalam perkembangannya, seperti dilihat dalam akun Go-Jek,
-                    GO-JEK tak hanya sebagai tarnsportasi online penumpang, tapi
-                    ia berkembang menjadi jasa antar barang (Go-Send), makanan
-                    (Go-Food), alat kesehatan, massage, dan kebersihan
-                    (Go-Clean). Kini Go-JEK sudah memiliki 200 ribu partner
-                    pengemudi motor dan mobil, 35 ribu merchant Go Food, dan
-                    3.000 penyedia layanan lainnya.
-                </p>
             </Section>
-            <Section className="max-w-screen-md p-8 pb-0 relative flex-col bg-[#ffffff] text-black rounded-t-3xl">
-                <p className="text-center text-2xl tracking-wider leading-snug">
-                    Semua orang bisa mencuri idemu, tetapi tidak semua orang
-                    bisa <b>mengeksekusi idemu sebaik dirimu</b>.
-                </p>
+            <Section>
+                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <h2 className="text-3xl font-bold">Ide Bisnis Gojek</h2>
+                        <p className="text-xl">
+                            Ketika ia bekerja di Mckinsey & Company, dia
+                            memiliki pengalaman pribadi bahwa ia lebih suka
+                            pergi dengan ojek. Dari pengalaman pribadi itulah ia
+                            mendapatkan ide untuk bisnis ini. Hal ini cukup
+                            efektif untuk menghindari kemacetan di ibu kota.
+                        </p>
+                    </div>
 
-                <p className="text-center text-2xl tracking-wider leading-snug font-mono">
-                    - Nadiem Makarim -
-                </p>
-                <hr className="h-[2px] my-2 bg-gray-200 border-0 "/>
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/jakarta-macet.jpg"
+                            alt="Jakarta Macet"
+                            width={400}
+                            height={533}
+                            className="bg-zinc-900 object-cover rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/pangkalan-ojek.jpg"
+                            alt="Karir Setelah Kembali ke Tanah Air"
+                            width={400}
+                            height={533}
+                            className="bg-white object-cover rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
+                    </div>
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <p className="text-xl">
+                            Sayangnya, menemukan tukang ojek sangat sulit, dan
+                            Anda harus memulai dari awal. karena tidak selalu
+                            tersedia saat dibutuhkan. Selain itu, pihak mereka
+                            menghadapi kesulitan dalam mencari penumpang dan
+                            menunggu di pangkalan.
+                        </p>
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <h2 className="text-3xl font-bold">Mendirikan Gojek</h2>
+                        <p className="text-xl">
+                            Nadiem menemukan bahwa ada masalah permintaan dan
+                            penawaran yang tidak sesuai setelah mengamati dan
+                            berbicara dengan ojek langganan, jadi dia mendirikan
+                            Gojek untuk menyelesaikan masalah itu.
+                        </p>
+                    </div>
+
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/nadiem-hijau.jpg"
+                            alt="Nadiem Mendirikan Gojek"
+                            width={400}
+                            height={533}
+                            className="bg-zinc-900 object-cover rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex md:flex-row flex-col max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/gojek-apps.png"
+                            alt="Gojek Semakin Dikenal"
+                            width={400}
+                            height={533}
+                            className="bg-[#00aa13] object-cover rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
+                    </div>
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <h2 className="text-3xl font-bold">
+                            Gojek Semakin Dikenal
+                        </h2>
+                        <p className="text-xl">
+                            Untuk meningkatkan jumlah pelanggan dan
+                            memperkenalkan model bisnis mereka, Gojek
+                            meluncurkan aplikasi berbasis ponsel pada tahun
+                            2015. Kemudian orang-orang mulai menggunakan
+                            aplikasi tersebut. Ini sekaligus mengubah gaya hidup
+                            banyak orang.
+                        </p>
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex md:flex-row flex-col-reverse max-w-screen-md text-xl tracking-wider leading-normal gap-8 items-center">
+                    <div className="flex-1 w-full gap-4 flex flex-col">
+                        <h2 className="text-3xl font-bold">
+                            Perkembangan Gojek
+                        </h2>
+                        <p className="text-xl">
+                            Investor mulai bermunculan, seperti Softbank dan
+                            Google. Pada akhirnya, Gojek memperluas tujuannya
+                            dengan menawarkan sistem pembayaran digital Go-pay,
+                            pembersih rumah Go-clean, pengantaran paket Go-send,
+                            dan fitur pemesanan makanan Go-food.
+                        </p>
+                    </div>
+
+                    <div className="md:w-auto w-full md:h-80 m-auto md:aspect-square">
+                        <Image
+                            src="/gofood.png"
+                            alt="GoFood"
+                            width={400}
+                            height={533}
+                            className="bg-white object-contain p-6 rounded-2xl md:h-80 w-full"
+                            unoptimized
+                        />
+                    </div>
+                </div>
+            </Section>
+            <Section>
+                <div className="flex flex-row justify-end text-xl tracking-wider leading-normal gap-8 items-center w-full">
+                    <Link
+                        href="/kurikulum-merdeka"
+                        className="rounded-full bg-[#00aa13] px-6 py-3 hover:ring-2 hover:ring-white text-center flex flex-row items-center gap-2 w-full md:w-auto"
+                    >
+                        Lanjut ke Kurikulum Merdeka
+                        <ArrowRight weight="bold" />
+                    </Link>
+                </div>
             </Section>
         </main>
     );
