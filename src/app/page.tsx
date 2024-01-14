@@ -55,7 +55,7 @@ export default function Home() {
                     <div className="flex-1 w-full gap-4 flex flex-col">
                         <h2 className="text-3xl font-bold">Identitas Tokoh</h2>
                         <p className="text-xl">
-                            Nadiem Anwar Makarim, B.A., M.B.A. adalah seorang
+                            <b>Nadiem Anwar Makarim, B.A., M.B.A.</b> adalah seorang
                             pengusaha berkebangsaan Indonesia yang memegang
                             jabatan Menteri Pendidikan, Kebudayaan, Riset, dan
                             Teknologi. Dari pasangan Nono Anwar Makarim dan
