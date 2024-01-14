@@ -49,11 +49,11 @@ export default function Home() {
 
             <Section className="max-w-screen-md p-8 relative flex-col bg-[#00aa13] text-white rounded-t-3xl">
                 <p className="text-center text-2xl tracking-wider leading-snug">
-                    Semua orang bisa mencuri idemu, tetapi tidak semua orang
-                    bisa <b>mengeksekusi idemu sebaik dirimu</b>.
+                    "Semua orang bisa mencuri idemu, tetapi tidak semua orang
+                    bisa <b>mengeksekusi idemu sebaik dirimu</b>."
                 </p>
 
-                <p className="text-center text-2xl tracking-wider leading-snug font-mono">
+                <p className="text-center text-xl tracking-wider leading-snug font-mono">
                     - Nadiem Makarim -
                 </p>
             </Section>
