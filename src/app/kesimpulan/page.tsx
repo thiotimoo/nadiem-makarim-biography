@@ -49,8 +49,8 @@ export default function Home() {
 
             <Section className="max-w-screen-md p-8 relative flex-col bg-[#00aa13] text-white rounded-t-3xl">
                 <p className="text-center text-2xl tracking-wider leading-snug">
-                    "Semua orang bisa mencuri idemu, tetapi tidak semua orang
-                    bisa <b>mengeksekusi idemu sebaik dirimu</b>."
+                    &quot;Semua orang bisa mencuri idemu, tetapi tidak semua
+                    orang bisa <b>mengeksekusi idemu sebaik dirimu</b>.&quot;
                 </p>
 
                 <p className="text-center text-xl tracking-wider leading-snug font-mono">
